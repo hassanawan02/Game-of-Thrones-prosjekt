@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="no">
+<head>
+<title>GOT Sesonger</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="stilark/got_sesongstyle.css">
+</head>
+<body>
+    <div class="innpakning">
+        <div class="topptekst">Game of Thrones Sesonger</div>
+        <div class="banner"><img src="bilder/got1000.jpg" alt="gotbanner" title="pixbay.com" class="gotbilde"></div>
+        <div class="menyvalg">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Hjemmeside</a></li>
+                    <li><a href="got_sesonger.html">Sesonger</a></li>
+                    <li><a href="got_karakterer.html">Karakterer</a></li>
+                </ul>
+            </nav> 
+            <hr>
+        </div>
+        <div class="innhold">
+        <div class="info">
+            Velg sesong for å se hvor mange episoder den har! 
+
+            <select id="sesongliste"> 
+                <option value="10">Sesong 1</option>
+                <option value="10">Sesong 2</option>
+                <option value="10">Sesong 3</option>
+                <option value="10">Sesong 4</option>
+                <option value="10">Sesong 5</option>
+                <option value="10">Sesong 6</option>
+                <option value="7">Sesong 7</option>
+                <option value="6">Sesong 8</option>
+            </select>
+            <button id="btnBekreft" type="button">Bekreft</button>
+            <p id="utskrift"></p>
+        
+            <script>
+                var sesonglisteEl = document.getElementById("sesongliste");
+                var btnBekreftEl = document.getElementById("btnBekreft")
+                var utskriftEl = document.getElementById("utskrift");
+        
+                btnBekreftEl.onclick = visResultat;
+        
+                function visResultat() {
+                    var episoder = sesonglisteEl.value;
+                    var indeks = sesonglisteEl.selectedIndex;
+                    var land = sesonglisteEl[indeks].innerHTML;
+        
+                    utskriftEl.innerHTML = "Det er " + episoder + " episoder i " + land + ".";
+                }
+        
+        
+            </script>
+        </div>
+        <div class="bilde">
+            <img src="bilder/winter_is_here_ferdig.jpg" class="vinterbilde" title="voicesfilm.com"> <br>
+            <a class="kilde"href="https://voicesfilm.com/tag/game-of-thrones-season-7/" target="_blank">https://voicesfilm.com/tag/game-of-thrones-season-7/</a>
+        </div>
+        </div>
+        <div class="bunntekst">Av Hassan Awan</div>
+    </div>
+
+</body>
+
+
+</html>
