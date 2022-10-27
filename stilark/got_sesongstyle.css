@@ -1,0 +1,136 @@
+* {
+    background-color: lightgray;
+    font-family: Century Gothic;
+    font-size: 16px;
+}
+.innpakning {
+    background-color: #2D413C;
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+} 
+.topptekst {
+    background-color: #2D413C;
+    color: #E0E3E7;
+    margin: auto;
+    display: block;
+    padding: 5px;
+    order: 1;
+    flex-basis: 100%;
+    height: 120px;
+    font-size: 45px;
+    font-weight: bold;
+    height: 75px;
+}
+.banner {
+    order: 2;
+    display: 5px;
+    width:1000px;
+}
+.gotbilde {
+    display: block;
+    margin: auto;
+    width: 1000px;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+}
+.menyvalg {
+    order: 3;
+}
+ul {
+    background-color: #2D413C;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+}
+.kilde:hover {
+    color: #E0E3E7;
+}
+.kilde {
+    background-color: #2D413C;
+    color: #FF782B;
+    padding: 5px;
+}
+ul li {
+    display: inline;
+}
+nav {
+    float: right;
+    width: 1000px;
+}
+ul a {
+    padding: 10px 30px;
+    color: #E0E3E7;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #2D413C;
+    
+}
+
+ul a:hover {
+    background-color: #FF782B;
+}
+h1 {
+    font-size: 40px;
+    background-color: #2D413C;
+    color: #E0E3E7;
+}
+p {
+    background-color: #E0E3E7;
+    color: #2D413C;
+}
+.innhold {
+    order: 4;
+    background-color: #2D413C;
+    width: 1000px;
+    height: 360px;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+}
+.kilde:active {
+    color: #428542;
+}
+.kilde:visited {
+    color: #C2B225;
+}
+.info {
+    background-color: #E0E3E7;
+    color: #2D413C;
+    width: 50%;
+    height: 300px;
+    font-size: 27px;
+    border-radius: 5px;
+    border: 3px solid black;
+    padding: 5px;
+    margin: 5px;
+}
+.bilde {
+    flex: 1;
+    background-color: #2D413C;
+    height: 300px;
+    width: 50%;
+    padding: 5px;
+    margin: 5px;
+}
+h4 {
+    color: #2D413C;
+    background-color: #E0E3E7;
+}
+.vinterbilde {
+    border: 3px solid black;
+    height: 300px;
+    width: 450px;
+}
+.bunntekst {
+    background-color: #FF782B;
+    color: #E0E3E7;
+    order: 5; 
+    flex-basis: 100%;
+    margin: auto;
+    display: block;
+    padding: 5px;
+
+}
